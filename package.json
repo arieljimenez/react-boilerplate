@@ -1,0 +1,35 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.0.1",
+  "main": "webpack.config.js",
+  "repository": "git@github.com:arieljimenez/react-boilerplate.git",
+  "author": "Ariel Jimenez <ariel.jimenez2025@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --open --hot",
+    "build": "rm -fr dist/* && webpack --mode production --module-bind 'js=babel-loader' --module-bind 'jsx=babel-loader' --resolve-extensions .js,.jsx",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-root-import": "^4.1.8",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "prop-types": "^15.6.2",
+    "react-router-dom": "^4.3.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
