@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --mode=development --open --hot",
-    "build": "rm -fr dist/* && webpack --mode production --module-bind 'js=babel-loader' --module-bind 'jsx=babel-loader' --resolve-extensions .js,.jsx",
+    "build": "rm -fr dist/* && webpack --mode production",
     "test": "jest"
   },
   "dependencies": {
